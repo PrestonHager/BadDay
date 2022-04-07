@@ -18,5 +18,5 @@ let ALL_MEMES = [
 $(document).ready(() => {
   // let meme_url = "meme.jpeg";
   let meme_url = ALL_MEMES[Math.floor(Math.random()*ALL_MEMES.length)];
-  $("#meme").append($(`<img src="${meme_url}">`));
+  $("#meme").append($(`<img src="memes/${meme_url}">`));
 });
