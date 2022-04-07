@@ -15,8 +15,12 @@ let ALL_MEMES = [
   "wishes_dino.png",
 ];
 
-$(document).ready(() => {
-  // let meme_url = "meme.jpeg";
+let new_meme = () => {
   let meme_url = ALL_MEMES[Math.floor(Math.random()*ALL_MEMES.length)];
+  $("#meme").empty();
   $("#meme").append($(`<img src="memes/${meme_url}">`));
+}
+
+$(document).ready(() => {
+  new_meme();
 });
