@@ -3,13 +3,28 @@
 <html>
 <head>
   <title>Bad Day?</title>
-  <link rel="stylesheet" href="index.css"
+  <link rel="stylesheet" href="index.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 <body>
   <h1>Bad Day?</h1>
   <p>Enjoy a Meme!</p>
   <div id="meme"></div>
   <button onclick="new_meme();">Another One</button>
+  <button onclick="credits_card();">Credits</button>
+  <div id="credits" hidden>
+    <button id="close-credits" onclick="credits_card();">
+      X
+    </button>
+    <h1>Credits</h1>
+    <p>Made with love by:<br>
+      Hannah Martin & Preston Hager</p>
+    <p>Icons from favicon.io</p>
+    <p>Memes from Google Images</p>
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </body>

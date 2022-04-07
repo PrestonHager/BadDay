@@ -4,11 +4,11 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 7em;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 4em;
 }
 
 img {
@@ -16,14 +16,14 @@ img {
 }
 
 button {
-  margin: 2em 0 5em 0;
+  margin: 2em 0.5em 5em 0.5em;
   background-color: #eded34;
   border-radius: 1em;
   border: 0.0625em solid #736dc7;
   display: inline-block;
   cursor: pointer;
   color: #736dc7;
-  font-size: 1em;
+  font-size: 2.5em;
   padding: 1em 2em;
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
@@ -34,4 +34,27 @@ button:hover {
 button:active {
   position: relative;
   top: 1px;
+}
+
+div#credits {
+  position: absolute;
+  top: 0;
+  margin: 50% 7%;
+  width: 80%;
+  background-color: grey;
+  padding: 2em;
+  border-radius: 2em;
+  border: 0.125em solid black;
+}
+div#credits #close-credits {
+  margin: 0;
+  padding: 0 0.5em;
+  background-color: grey;
+  border-radius: 10em;
+  border: 0.0625em solid black;
+  color: black;
+  position: absolute;
+  top: -0.5em;
+  right: -0.75em;
+  font-size: 5em;
 }

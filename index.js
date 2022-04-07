@@ -15,10 +15,20 @@ let ALL_MEMES = [
   "wishes_dino.png",
 ];
 
+let current_meme = "";
+
 let new_meme = () => {
-  let meme_url = ALL_MEMES[Math.floor(Math.random()*ALL_MEMES.length)];
+  let meme_url = current_meme;
+  while (meme_url == current_meme) {
+    meme_url = ALL_MEMES[Math.floor(Math.random()*ALL_MEMES.length)];
+  }
+  current_meme = meme_url;
   $("#meme").empty();
   $("#meme").append($(`<img src="memes/${meme_url}">`));
+}
+
+let credits_card = () => {
+  $("#credits").toggle();
 }
 
 $(document).ready(() => {
