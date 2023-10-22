@@ -6,13 +6,28 @@ body {
 h1 {
   font-size: 7em;
 }
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 3em;
+  }
+}
 
 p {
   font-size: 4em;
 }
+@media (min-width: 1025px) {
+  p {
+    font-size: 1.5em;
+  }
+}
 
 img {
   width: 90%;
+}
+@media (min-width: 1025px) {
+  img {
+    width: auto;
+  }
 }
 
 button {
@@ -35,12 +50,22 @@ button:active {
   position: relative;
   top: 1px;
 }
+@media (min-width: 1025px) {
+  button {
+    margin: 2em 0.5em 2em 0.5em;
+    font-size: 1.5em;
+  }
+}
 
 div#credits {
-  position: absolute;
+  position: fixed;
   top: 0;
-  margin: 50% 7%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 80%;
+  height: 55em;
   background-color: grey;
   padding: 2em;
   border-radius: 2em;
@@ -57,4 +82,16 @@ div#credits #close-credits {
   top: -0.5em;
   right: -0.75em;
   font-size: 5em;
+}
+@media (min-width: 1025px) {
+  div#credits #close-credits {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1025px) {
+  div#credits {
+    padding: 1em;
+    width: 50%;
+    height: 20em;
+  }
 }
