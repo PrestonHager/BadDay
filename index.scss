@@ -1,8 +1,12 @@
 @import "include-media";
 
+html {
+  height: 100%;
+}
 body {
   margin: 0;
   text-align: center;
+  height: 90%;
 }
 
 h1 {
@@ -19,10 +23,16 @@ p {
   }
 }
 
-img {
-  width: 90%;
+div {
+  img {
+    width: 90%;
+    @include media(">desktop") {
+      width: auto;
+      height: 100%;
+    }
+  }
   @include media(">desktop") {
-    width: auto;
+    height: 60%;
   }
 }
 

@@ -1,6 +1,11 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   text-align: center;
+  height: 90%;
 }
 
 h1 {
@@ -21,12 +26,18 @@ p {
   }
 }
 
-img {
+div img {
   width: 90%;
 }
 @media (min-width: 1025px) {
-  img {
+  div img {
     width: auto;
+    height: 100%;
+  }
+}
+@media (min-width: 1025px) {
+  div {
+    height: 60%;
   }
 }
 
