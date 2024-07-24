@@ -3,6 +3,7 @@
 <html>
 <head>
   <title>Bad Day?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="index.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -12,16 +13,16 @@
 <body>
   <h1>Bad Day?</h1>
   <p>Enjoy a Meme!</p>
-  <div id="meme"></div>
   <button onclick="new_meme();">Another One</button>
+  <div id="meme"></div>
   <button onclick="credits_card();">Credits</button>
   <div id="credits" hidden>
     <button id="close-credits" onclick="credits_card();">
       X
     </button>
     <h1>Credits</h1>
-    <p>Made with love by:<br>
-      Hannah Martin & Preston Hager</p>
+    <p style="white-space: nowrap">Made with love by:<br>
+      Hannah Martin & <wbr />Preston Hager</p>
     <p>Icons from favicon.io</p>
     <p>Memes from Google Images</p>
   </div>
