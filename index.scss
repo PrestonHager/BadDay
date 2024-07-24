@@ -10,14 +10,14 @@ body {
 }
 
 h1 {
-  font-size: 7em;
+  font-size: 3em;
   @include media(">desktop") {
     font-size: 3em;
   }
 }
 
 p {
-  font-size: 4em;
+  font-size: 1.5em;
   @include media(">desktop") {
     font-size: 1.5em;
   }
@@ -25,7 +25,7 @@ p {
 
 div {
   img {
-    width: 90%;
+    width: 80%;
     @include media(">desktop") {
       width: auto;
       height: 100%;
@@ -37,14 +37,14 @@ div {
 }
 
 button {
-  margin: 2em 0.5em 5em 0.5em;
+  margin: 0.55em 0.5em 0.55em 0.5em;
   background-color: #eded34;
 	border-radius: 1em;
 	border: 0.0625em solid #736dc7;
 	display: inline-block;
 	cursor: pointer;
 	color: #736dc7;
-	font-size: 2.5em;
+	font-size: 1em;
 	padding: 1em 2em;
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #2f6627;
@@ -68,10 +68,10 @@ div#credits {
   left: 0;
   right: 0;
   margin: auto;
-  width: 80%;
-  height: 55em;
+  width: 70%;
+  height: 20em;
   background-color: grey;
-  padding: 2em;
+  padding: 1em;
   border-radius: 2em;
   border: 0.125em solid black;
   #close-credits {
@@ -84,7 +84,7 @@ div#credits {
     position: absolute;
     top: -0.5em;
     right: -0.75em;
-    font-size: 5em;
+    font-size: 2em;
     @include media(">desktop") {
       font-size: 2em;
     }
